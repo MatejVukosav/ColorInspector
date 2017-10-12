@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="one.concept.vuki.com.colorinspector.MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="218dp"
+        android:src="@drawable/jungle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/lightVibrant"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="light vibrant"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <Button
+        android:id="@+id/vibrant"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="vibrant"
+        app:layout_constraintTop_toBottomOf="@id/lightVibrant" />
+
+    <Button
+        android:id="@+id/darkVibrant"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="dark vibrant"
+        app:layout_constraintTop_toBottomOf="@id/vibrant" />
+
+    <Button
+        android:id="@+id/lightMuted"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="light muted"
+        app:layout_constraintTop_toBottomOf="@id/darkVibrant" />
+
+    <Button
+        android:id="@+id/muted"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="muted"
+        app:layout_constraintTop_toBottomOf="@id/lightMuted" />
+
+    <Button
+        android:id="@+id/darkMuted"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="dark muted"
+        app:layout_constraintTop_toBottomOf="@id/muted" />
+
+
+</android.support.constraint.ConstraintLayout>
